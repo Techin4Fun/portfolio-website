@@ -14,7 +14,7 @@ const slides = [
     image: "./assets/landing-page.webp",
     link: "https://t4f-landing-page.netlify.app",
     github: "https://github.com/Techin4Fun/sylo-landing-page",
-    title: "Sylo",
+    title: "Landing Page",
     description: "Sylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.",
     technologies: "HTML / Tailwind CSS"
   },
