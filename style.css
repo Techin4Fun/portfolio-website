@@ -14,7 +14,7 @@
 }
 
 .container {
-  /*   visibility: hidden; */
+  max-height: 926px;
   font-family: "Poppins", sans-serif;
   line-height: 1.25rem;
   height: 95vh;
@@ -22,7 +22,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  /*   grid-auto-flow: row; */
   grid-template-areas:
     "About Intro Intro Something"
     "About Projects Projects Something"
@@ -61,7 +60,10 @@
 
 html,
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   background-color: var(--background);
@@ -374,6 +376,14 @@ h1 {
   .Contacts img{
      width: 2rem;
   }
+
+  .contact-logos-container{
+    height: 50%
+  }
+
+  .Resume div{
+    height: 50%;
+  }
   
   .Resume img{
     width: 2rem;
@@ -463,6 +473,10 @@ h1 {
   .About div a:hover{
     box-shadow: 0px 2px black;
     background-color: rgb(224, 112, 71);
+  }
+
+  html,body{
+    height: 100vh;
   }
 
   #github-button:hover{
