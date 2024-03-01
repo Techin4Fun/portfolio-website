@@ -5,13 +5,13 @@ const showcaseButton = document.querySelector("#showcase-button");
 const projectTitle = document.querySelector("#project-title");
 const projectDescription = document.querySelector("#project-description");
 const projectTechnologies = document.querySelector("#project-technologies");
-const projectImage = document.querySelector("#project-image")
+const projectImage = document.querySelector("#project-image");
 
 let slideIndex = 0; 
 const slide = document.querySelector(".slide");
 const slides = [
   {
-    image: "./assets/landing-page.png",
+    image: "./assets/landing-page.webp",
     link: "https://t4f-landing-page.netlify.app",
     github: "https://github.com/Techin4Fun/sylo-landing-page",
     title: "Sylo",
@@ -20,7 +20,7 @@ const slides = [
   },
 
   {
-    image: "./assets/expense-tracker.png",
+    image: "./assets/expense-tracker.webp",
     link: "https://t4f-expense-tracker.netlify.app",
     github: "https://github.com/Techin4Fun/expense-tracker",
     title: "Expense Tracker",
@@ -29,7 +29,7 @@ const slides = [
   },
   
   {
-    image: "./assets/pokedex.png",
+    image: "./assets/pokedex.webp",
     link: "https://t4f-pokedex.netlify.app",
     github: "https://github.com/Techin4Fun/pokedex-project",
     title: "Pokedex",

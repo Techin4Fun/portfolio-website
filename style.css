@@ -291,10 +291,6 @@ h1 {
   object-fit: contain;
 }
 
-#showcase-button{
-  /* filter: blur(1px); */
-}
-
 .btn {
   border-radius: 1000px;
   border: none;
