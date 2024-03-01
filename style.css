@@ -10,6 +10,7 @@
   --skills: white;
   --contacts: #e0f2fe;
   --resume: white;
+  --global-text: #404040;
 }
 
 .container {
@@ -30,7 +31,7 @@
   grid-gap: 2rem;
   padding: 1.35rem;
   background-color: var(--background);
-  color: #404040;
+  color: var(--global-text);
 }
 
 .Projects {
@@ -86,6 +87,10 @@ h1 {
   font-size: 1.25rem;
 }
 
+.Intro h1{
+  line-height: 2rem;
+}
+
 .About {
   background-color: var(--about);
   transition: box-shadow, 0.35s;
@@ -104,12 +109,13 @@ h1 {
 
 .About div a {
   padding: 0.25rem 1rem;
-  border: 2px solid black;
+  border: 2px solid rgba(0,0,0,0.5);
   border-radius: 10px;
   text-decoration: none;
   background-color: white;
   color: black;
 }
+
 
 .Skills {
   background-color: var(--skills);
@@ -122,6 +128,16 @@ h1 {
 
 .Skills img {
   width: 3.5rem;
+  border: 2px solid rgba(0,0,0,0);
+  background-color: rbga(0,0,0,0);
+  border-radius: 0px;
+  transition: border-radius 0.45s, border 0.45s, background-color 0.45s;
+}
+
+.Skills img:hover{
+  border: 2px solid rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.10);
+  border-radius: 999px;
 }
 
 .skill-images-container {
@@ -159,8 +175,10 @@ h1 {
   transition: box-shadow, 0.35s;
 }
 
+
 .Resume:hover {
   box-shadow: 0px 0px 3px 1px #fef2f2;
+  background-color: rgba(0,0,0,0.15);
 }
 
 .Resume img {
@@ -192,6 +210,16 @@ h1 {
 
 .Learning img {
   width: 4rem;
+  border: 2px solid rgba(0,0,0,0);
+  background-color: rbga(0,0,0,0);
+  border-radius: 0px;
+  transition: border-radius 0.45s, border 0.45s, background-color 0.45s;
+}
+
+.Learning img:hover{
+  border: 2px solid rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.10);
+  border-radius: 999px;
 }
 
 .Intro {
@@ -207,9 +235,11 @@ h1 {
 }
 
 .Something {
-  background-color: #bae6fd;
-  padding: 0;
+  background-color: rgba(0,0,0,0.05);
+  padding: 1rem;
   transition: box-shadow, 0.35s;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .Something:hover {
@@ -221,7 +251,12 @@ h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
-  filter: opacity(15%);
+  filter: opacity(5%);
+  position: absolute;
+  left: 0;
+  bottom:0;
+  z-index: 0;
+  /* filter: blur(1px); */
 }
 
 /* Project Slider */
@@ -234,7 +269,7 @@ h1 {
 }
 
 .Projects:hover {
-  box-shadow: 0px 0px 3px 1px white;
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
 }
 
 .slide-container {
@@ -247,7 +282,12 @@ h1 {
 .slide-container img {
   border-radius: 20px;
   width: 100%;
-  object-fit: cover;
+  height: 90%;
+  object-fit: contain;
+}
+
+#showcase-button{
+  /* filter: blur(1px); */
 }
 
 .btn {
@@ -258,9 +298,57 @@ h1 {
 }
 
 .buttons-container {
-  margin-top: -1.75rem;
+  margin-top: -2.25rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.bc1{width: 25%;}
+.bc2{width: 50%}
+.bc3{width: 25%;}
+
+.bc3 a{
+  /* width: 10px; */
+  padding: 0px 5px;
+}
+
+#github-button{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: coral;
+  border: 2px solid rgba(0,0,0,0.25);
+  border-radius: 10px;
+  box-shadow: 0px 4px black;
+  transition: box-shadow 0.25s, background-color 0.25s;
+}
+
+#github-button:hover{
+  box-shadow: 0px 2px black;
+  background-color: rgb(224, 112, 71);
+}
+
+#prev-button,
+#next-button{
+  color: white;
+  background-color: rgb(173, 216, 230);
+  font-weight: bold;
+  border: 2px solid rgba(0,0,0,0.25);
+  border-radius: 999px;
+  box-shadow: 0px 4px black;
+  cursor: pointer;
+  transition: box-shadow 0.25s, background-color 0.25s;
+}
+
+#prev-button:hover,
+#next-button:hover{
+  box-shadow: 0px 2px black;
+  background-color: rgb(146, 182, 194);
+  
+}
+
 
 
 
@@ -298,16 +386,33 @@ h1 {
     margin: 0 auto;
     max-width: 450px;
   }
+  
+  .About div a {
+    padding: 0.25rem 0.45rem;
+    border: 2px solid rgba(0,0,0,0.25);
+    box-shadow: 0px 4px black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(255, 127, 80);
+    color: white;
+    transition: box-shadow 0.25s, background-color 0.25s;
+  }
+
+  .About div a:hover{
+    box-shadow: 0px 2px black;
+    background-color: rgb(224, 112, 71);
+  }
 
   .container {
     height: initial;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem auto auto auto auto auto;
+    grid-template-rows: 10rem auto auto 17rem auto auto auto;
     grid-template-areas:
       "Intro Intro"
       "Contacts Resume"
       "About About"
       "Projects Projects"
+      "Something Something"
       "Skills Skills"
       "Learning Learning"
       ;
@@ -318,8 +423,8 @@ h1 {
     text-align: center;
   }
 
-  .Something{
-    display: none;
+  .buttons-container {
+    margin-top: -1.75rem;
   }
   
   .Learning div{
@@ -345,6 +450,22 @@ h1 {
 
   .About div a {
     padding: 0.25rem 0.45rem;
+    border: 2px solid rgba(0,0,0,0.25);
+    box-shadow: 0px 4px black;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: coral;
+    color: white;
+    transition: box-shadow 0.25s, background-color 0.25s;
+  }
+
+  .About div a:hover{
+    box-shadow: 0px 2px black;
+    background-color: rgb(224, 112, 71);
+  }
+
+  #github-button:hover{
+    background-color: rgb(224, 112, 71);
   }
 
   .Skills img {
@@ -384,12 +505,4 @@ h1 {
     line-height: 1.25rem;
   }
 
-  .About div a {
-    padding: 0.25rem 1rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: white;
-    color: black;
-  }
 }

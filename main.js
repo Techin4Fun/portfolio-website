@@ -1,18 +1,40 @@
 const prevButton = document.querySelector("#prev-button");
 const nextButton = document.querySelector("#next-button");
+const githubButton = document.querySelector("#github-button");
+const showcaseButton = document.querySelector("#showcase-button");
+const projectTitle = document.querySelector("#project-title");
+const projectDescription = document.querySelector("#project-description");
+const projectTechnologies = document.querySelector("#project-technologies");
+const projectImage = document.querySelector("#project-image")
+
 let slideIndex = 0; 
 const slide = document.querySelector(".slide");
 const slides = [
   {
-    image: "https://images.pexels.com/photos/3672355/pexels-photo-3672355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "./assets/landing-page.png",
+    link: "https://t4f-landing-page.netlify.app",
+    github: "https://github.com/Techin4Fun/sylo-landing-page",
+    title: "Sylo",
+    description: "Sylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.",
+    technologies: "HTML / Tailwind CSS"
   },
 
   {
-    image: "https://images.pexels.com/photos/164745/pexels-photo-164745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "./assets/expense-tracker.png",
+    link: "https://t4f-expense-tracker.netlify.app",
+    github: "https://github.com/Techin4Fun/expense-tracker",
+    title: "Expense Tracker",
+    description: "A utility tool to help you stay on top of all your expenses. It calculates your total balance, income and expense for you.",
+    technologies: "HTML / CSS / Tailwind CSS / React / Local Storage"
   },
   
   {
-    image: "https://images.pexels.com/photos/250695/pexels-photo-250695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "./assets/pokedex.png",
+    link: "https://t4f-pokedex.netlify.app",
+    github: "https://github.com/Techin4Fun/pokedex-project",
+    title: "Pokedex",
+    description: "This Pokedex features all 151 Pokemon (in color) from the game Pokemon Red on the GameBoy!",
+    technologies: "HTML / Tailwind CSS / React"
   }
 ];
 
@@ -20,6 +42,17 @@ getSlides();
 
 function getSlides(){
   slide.src = slides[slideIndex].image;
+
+  showcaseButton.href = slides[slideIndex].link;
+  showcaseButton.target = "_blank";
+
+  githubButton.href = slides[slideIndex].github;
+  githubButton.target = "_blank";
+
+  projectTitle.textContent = slides[slideIndex].title;
+  projectDescription.textContent = slides[slideIndex].description;
+  projectTechnologies.textContent = slides[slideIndex].technologies;
+  projectImage.src = slide.src;
 }
 
 nextButton.addEventListener("click", function(){
