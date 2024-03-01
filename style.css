@@ -445,7 +445,7 @@ h1 {
   
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 600px) and (max-height: 800px) {
   html,body{
     height: 100%;
   }
@@ -463,6 +463,10 @@ h1 {
   .About {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .Something {
+    font-size: 0.75rem;
   }
 
   .About div {
@@ -506,6 +510,10 @@ h1 {
     line-height: 1.25rem;
   }
 
+  .Something {
+    font-size: 0.85rem;
+  }
+
   .About div {
     margin-top: 25px;
     font-size: 1rem;
@@ -529,6 +537,10 @@ h1 {
   .About {
     font-size: 1rem;
     line-height: 1.25rem;
+  }
+
+  .Something {
+    font-size: 1rem;
   }
 
 }
