@@ -155,6 +155,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  height: 70%;
 }
 
 .Contacts {
@@ -185,10 +186,12 @@ h1 {
   width: 4rem;
 }
 
+
 .Resume div {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 70%;
 }
 
 .Learning {
@@ -206,6 +209,8 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  /* background-color: grey; */
+  height: 80%;
 }
 
 .Learning img {
@@ -469,7 +474,7 @@ h1 {
   }
 
   .Skills img {
-    width: 2.75rem;
+    width: 2.7rem;
   }
 }
 
