@@ -454,6 +454,7 @@ h1 {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto; 
   }
+
 }
 
 
@@ -520,7 +521,7 @@ h1 {
   }
 
   .Skills img {
-    width: 3.5rem;
+    width: 3.25rem;
   }
 }
 
@@ -531,7 +532,7 @@ h1 {
   }
 
   .Skills img {
-    width: 4rem;
+    width: 3.25rem;
   }
 
   .About {
@@ -541,6 +542,10 @@ h1 {
 
   .Something {
     font-size: 1rem;
+  }
+
+  .Learning img{
+    width: 3.25rem;
   }
 
 }
