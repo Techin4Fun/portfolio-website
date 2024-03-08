@@ -486,7 +486,7 @@ h1 {
   .container {
     height: initial;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 10rem auto 17rem auto auto auto;
+    grid-template-rows: 10rem auto auto 17rem auto auto auto;
     grid-template-areas:
       "Intro Intro"
       "Contacts Resume"
@@ -526,7 +526,7 @@ h1 {
   
 }
 
-@media only screen and (min-height: 300px) and (max-height: 750px) {
+@media only screen and (min-height: 380px) and (min-width: 700px) and (orientation: landscape) {
   html,body{
     height: 100%;
   }
@@ -541,7 +541,7 @@ h1 {
 
 
 
-@media only screen and (min-width: 800px) and (min-height: 800px) {
+@media only screen and (min-width: 800px) {
 
   .About {
     font-size: 0.75rem;
