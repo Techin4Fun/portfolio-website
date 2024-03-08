@@ -459,7 +459,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 799px){
+@media only screen and (max-width: 874px){
   .html,
   body {
     height: 100%;
@@ -526,7 +526,19 @@ h1 {
   
 }
 
-@media only screen and (min-height: 380px) and (min-width: 700px) and (orientation: landscape) {
+/* @media only screen and (min-height: 380px) and (min-width: 700px) and (orientation: landscape) {
+  html,body{
+    height: 100%;
+  }
+  
+
+  .container{
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; 
+  }
+
+} */
+@media only screen and (min-height: 400px) and (orientation: landscape) {
   html,body{
     height: 100%;
   }
@@ -541,7 +553,7 @@ h1 {
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 875px) {
 
   .About {
     font-size: 0.75rem;
