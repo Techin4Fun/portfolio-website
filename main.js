@@ -33,7 +33,7 @@ const slides = [
     link: "https://t4f-pokedex.netlify.app",
     github: "https://github.com/Techin4Fun/pokedex-project",
     title: "Pokedex",
-    description: "This Pokedex features all 151 Pokemon (in color) from the game Pokemon Red on the GameBoy!",
+    description: "This Pokedex retrieves all of its data from the PokeApi. It features all 151 pokemon from the First Generation!",
     technologies: "HTML / Tailwind CSS / React"
   }
 ];
@@ -52,7 +52,7 @@ function getSlides(){
   projectTitle.textContent = slides[slideIndex].title;
   projectDescription.textContent = slides[slideIndex].description;
   projectTechnologies.textContent = slides[slideIndex].technologies;
-  projectImage.src = slide.src;
+  // projectImage.src = slide.src;
 }
 
 nextButton.addEventListener("click", function(){
