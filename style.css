@@ -59,8 +59,18 @@
     "Skills Contacts Resume Learning";
   grid-gap: 2rem;
   padding: 1.35rem;
-  background-color: var(--background);
+  /* background-color: var(--background); */
   color: var(--global-text);
+  animation: loadIn 2s;
+}
+
+@keyframes loadIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .Projects {
