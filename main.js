@@ -11,6 +11,14 @@ let slideIndex = 0;
 const slide = document.querySelector(".slide");
 const slides = [
   {
+    image: "./assets/aulyzium.webp",
+    link: "https://aulyzium.netlify.app",
+    github: "",
+    title: "Aulyzium",
+    description: "This website uses a headless Wordpress setup. It uses Astro + React on the frontend and GraphQL + Wordpress on the backend to get all of the data for the samples.",
+    technologies: "Astro / React / TailwindCSS / GraphQL / Wordpress"
+  },
+  {
     image: "./assets/landing-page.webp",
     link: "https://t4f-landing-page.netlify.app",
     github: "https://github.com/Techin4Fun/sylo-landing-page",
