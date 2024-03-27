@@ -33,7 +33,7 @@ const slides = [
     github: "https://github.com/Techin4Fun/expense-tracker",
     title: "Expense Tracker",
     description: "A utility tool to help you stay on top of all your expenses. It calculates your total balance, income and expense for you.",
-    technologies: "HTML / CSS / Tailwind CSS / React / Local Storage"
+    technologies: "HTML / Tailwind CSS / React / Local Storage"
   },
   
   {
