@@ -15,7 +15,7 @@ const slides = [
     link: "https://aulyzium.netlify.app",
     github: "",
     title: "Aulyzium",
-    description: "This website uses a headless Wordpress setup. It uses Astro + React on the frontend and GraphQL + Wordpress on the backend to get all of the data for the samples.",
+    description: "This website uses a headless Wordpress / Woocommerce setup. It uses Astro + React on the frontend and GraphQL + Wordpress / Woocommerce on the backend to get all of the data for the samples.",
     technologies: "Astro / React / TailwindCSS / GraphQL / Wordpress"
   },
   {
