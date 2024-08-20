@@ -11,6 +11,14 @@ let slideIndex = 0;
 const slide = document.querySelector(".slide");
 const slides = [
   {
+    image: "./assets/sprypoint.webp",
+    link: "https://sprypoint-revision.netlify.app/",
+    github: "https://github.com/Techin4Fun/sprypoint-redesign",
+    title: "SpryPoint",
+    description: "Just a revision of SpyrPoint's homepage",
+    technologies: "HTML / Tailwind CSS"
+  },
+  {
     image: "./assets/aulyzium.webp",
     link: "https://aulyzium.netlify.app",
     github: "",
@@ -18,15 +26,6 @@ const slides = [
     description: "This website uses a headless Wordpress / Woocommerce setup. It uses Astro + React on the frontend and GraphQL + Wordpress / Woocommerce on the backend to get all of the data for the samples.",
     technologies: "Astro / React / TailwindCSS / GraphQL / Wordpress"
   },
-  {
-    image: "./assets/landing-page.webp",
-    link: "https://t4f-landing-page.netlify.app",
-    github: "https://github.com/Techin4Fun/sylo-landing-page",
-    title: "Sylo",
-    description: "A storage website for saving all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.",
-    technologies: "HTML / Tailwind CSS"
-  },
-
   {
     image: "./assets/expense-tracker.webp",
     link: "https://t4f-expense-tracker.netlify.app",
